@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.container .calculator {
+   background-color: slategray;
+   padding: 20px 10px;
+   border-radius: 10px;
+}
+.container .calculator h1 {
+    text-align: center;
+    margin-bottom: 23px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.calculator .labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.labels Label {
+    margin: 0 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.calculator .values {
+    margin: 8px 0;
+}
+.values input {
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    background-color:  rgb(143, 157, 170);
+}
+.values #operator {
+    width: 50px;
+}
+.values input::placeholder {
+    font-size: 12px;
+    color: rgb(3, 54, 54);
+}
+.values input[type=number] {
+    padding: 0 10px;
+    font-weight: 500;
+}
+.values input[type=text] {
+    padding-left: 10px;
+    font-weight: 500;
+}
+.calculator .submit {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.calculator .equal form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equal form input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    background-color:  rgb(143, 157, 170);
+}
+.equal form input[type=text] {
+    text-align: center;
+    font-weight: bold;
+}
+.calculator .submit button {
+    width: 60px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
